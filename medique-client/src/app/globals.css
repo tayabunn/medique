@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@theme {
+  --font-outfit: var(--font-outfit);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF6636;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e85520;
+}
+
+body {
+  font-family: var(--font-outfit), sans-serif;
+  background-color: #ffffff;
+  color: #1D2026;
+}
+
+/* Primary brand color overrides */
+:root {
+  --brand: #FF6636;
+  --brand-dark: #e85520;
+  --card-bg: #ffffff;
+  --card-text: #1D2026;
+  --card-border: #f3f4f6; /* gray-100 */
+}
+
+/* Dark mode */
+.dark {
+  --card-bg: #1D2026;
+  --card-text: #ffffff;
+  --card-border: #374151; /* gray-700 */
+}
+
+.dark body {
+  background-color: #1D2026;
+  color: #ffffff;
+}
